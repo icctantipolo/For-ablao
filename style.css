@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+}
+
+body,html {
+    margin: 0;
+    top: 0;
+    overflow-y: hidden;
+
+}
+
+body {
+    background-color: #d6e2f6;
+    font-family: "Fredoka", sans-serif;
+}
+
+
+/*Header*/
+header {
+    margin-bottom: 10%;
+    
+}
+
+/* LOGBUTTON */
+
+
+#Log-btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    margin-left: 80%;
+    width: 10%;
+    border: none;
+    background: #c2d9ff;
+    box-shadow:  20px 20px 40px #afc3e6,
+             -20px -20px 40px #d5efff;
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 25px;
+}
+
+#Log-btn:hover {
+    transform: scale(1.2);
+    background-color: rgb(123, 123, 160);
+}
+
+
+
+
+/*---TABLES---*/
+
+tr {
+    width: 50%;
+    font-size: 50px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+table {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+/*--Log Container--*/
+#Log-container {
+    position: absolute;
+    font-weight: 500;
+    top: 10%;
+    right: 25%;
+    transform: translate(0%, -0%);
+    background-color: white;
+    border: 5px solid rgb(111, 108, 246);
+    width: 50%;
+    height: 50%;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 10px;
+    background: linear-gradient(rgba(95, 101, 185, 0.5), rgba(165, 182, 228, 0.5));
+    backdrop-filter: blur(15px);
+}
+
+#Log-container.show{
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+/*--Log Position--*/
+
+#L-container {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+input {
+    margin: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+label {
+    margin-left: 10px;
+}
+
+#course-select{
+    position: absolute;
+    left: 10px;
+    margin-top: 5%;
+    background-color: none;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 15%;
+    cursor: pointer;
+}
+#course-select option{
+    transition: all 0.3s ease;
+}
+
+#prof-select{
+    position: absolute;
+    left: 10px;
+    margin-top: 5%;
+    background-color: none;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 15%;
+    cursor: pointer;
+}
+#course-select option{
+    transition: all 0.3s ease;
+}
+
+
+#adminbtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+#adminbtn a{
+    text-decoration: none;
+    color: red;
+}
+#submit {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 5px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    cursor: pointer;
+    transition: 200ms;
+}
+#submit:hover{
+    transform: scale(1.2);
+    background-color: rgb(126, 139, 197);
+    color: white;
+    font-weight: bolder;
+}
+
+#clear {
+    position: absolute;
+    bottom: 10%;
+    left: 200px;
+    padding: 5px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    cursor: pointer;
+    transition: 200ms;
+}
+#clear:hover{
+    transform: scale(1.2);
+    background-color: rgb(126, 139, 197);
+    color: white;
+    font-weight: bolder;
+}
+#clear, #submit {
+    position: absolute;
+    gap: 0px;
+}
